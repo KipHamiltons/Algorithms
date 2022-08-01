@@ -10,7 +10,10 @@ filegroup(
 cc_library(
     name = "kips_algs_lib",
     srcs = [":all_headers"],
-    hdrs = ["merge_sort.h"],
+    hdrs = [
+        "merge_sort.h",
+        "quick_sort.h",
+    ],
     linkstatic = 1,
     visibility = ["//visibility:public"],
 )
