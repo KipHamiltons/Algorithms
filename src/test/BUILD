@@ -20,3 +20,9 @@ cc_test(
     copts = ["-I src/main"],
 )
 
+cc_test(
+    name = "insertion_sort_test",
+    deps = ["//src/main:kips_algs_lib"],
+    srcs = ["insertion_sort_test.cpp"],
+    copts = ["-I src/main"],
+)
