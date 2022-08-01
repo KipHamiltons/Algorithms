@@ -13,3 +13,10 @@ cc_test(
     copts = ["-I src/main"],
 )
 
+cc_test(
+    name = "bubble_sort_test",
+    deps = ["//src/main:kips_algs_lib"],
+    srcs = ["bubble_sort_test.cpp"],
+    copts = ["-I src/main"],
+)
+
